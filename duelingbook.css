@@ -180,7 +180,7 @@ div.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled
     border:1px solid var(--border-color);
 }
 
-div.background {
+#logged_in div.background {
     color: var(--text-color);
     background: var(--bg-color);
     border:1px solid var(--border-color);
