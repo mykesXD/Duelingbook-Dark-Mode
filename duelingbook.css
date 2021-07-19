@@ -1,0 +1,385 @@
+@import url(https://fonts.googleapis.com/css2?family=Calibri:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+/*Feel free to delete the unnecessary sections or modify them to your needs*/
+
+/*----------- SECTION: CUSTOM AVATAR AND BACKROUND ---------*/
+
+#circuit_board {
+    visibility: hidden;
+}
+
+#circuit_cover {
+    visibility: hidden;
+}
+
+#greenlines {
+    visibility: hidden;
+}
+
+/*Background image (Replace the link with image or gif link)*/
+
+body {
+    background: url('https://mykes.s-ul.eu/EKsPp9cn');
+    background-size: cover;
+}
+
+/*In duel avatar (Replace the link with image or gif link)*/
+
+#avatar1>img.image {
+    content: url('https://mykes.s-ul.eu/MPeoeF4j');
+}
+
+/*----------- SECTION: DARK MODE ---------*/
+
+/*Colors*/
+
+:root {
+    --bg-color: linear-gradient(0deg, rgba(28, 28, 33, 1) 0%, rgba(23, 23, 27, 1) 100%);
+}
+
+:root {
+    --text-color: #d6d6d6;
+}
+
+:root {
+    --border-color: #3a3a3d;
+}
+
+:root {
+    --select-color: #4486c4;
+}
+
+/*Player colors were too bright on dark*/
+
+font {
+    filter: grayscale(20%);
+}
+
+/*Selection color*/
+
+::selection {
+    color: white;
+    background: var(--select-color);
+}
+
+/* Card preview text */
+
+#preview_txt {
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: solid 1px var(--border-color);
+}
+
+div.os-scrollbar-handle {
+    background-color: gainsboro;
+}
+
+/*Watchers section*/
+
+#watchers {
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: solid 1px var(--border-color);
+}
+
+#watchers>div {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/*Buttons*/
+
+div.button.proxy.unselectable {
+    background: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+    /*Delete line below for round edges*/
+    border-radius: 0px;
+}
+
+/*Inputs*/
+
+input[type] {
+    background: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: solid 1px var(--border-color);
+}
+
+div.textinput.proxy {
+    background: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/*Drop down selectors*/
+
+div.combobox.proxy.unselectable {
+    background: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+    /*Delete line below for round edges*/
+    border-radius: 0px;
+}
+
+select {
+    background: none;
+    color: var(--text-color);
+    background: rgba(28, 28, 33, 1);
+}
+
+/*Chatting section*/
+
+div.cout_txt.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition {
+    background: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: solid 1px var(--border-color);
+    padding-left: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/*Card options*/
+
+span.card_menu_txt {
+    background: none;
+    opacity: 85%;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: solid 1px var(--border-color);
+}
+
+span.card_menu_txt:hover {
+    background: none;
+    color: var(--text-color);
+    background-color: var(--select-color);
+    border: solid 1px var(--border-color);
+}
+
+/*Logs and Watchers section*/
+
+div.chat_background {
+    background: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+div.log_txt.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition {
+    background: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border:1px solid var(--border-color);
+}
+
+/*Login Screen*/
+
+div.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition.os-host-overflow.os-host-overflow-y {
+    background: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border:1px solid var(--border-color);
+}
+
+div.background {
+    color: var(--text-color);
+    background: var(--bg-color);
+    border:1px solid var(--border-color);
+}
+
+#logged_in_as_lbl {
+    color: var(--text-color);
+}
+
+#logged_in > span.username_txt{
+    color: var(--text-color);
+}
+/*Rankings*/
+
+.ranking_item.unselectable {
+    background: none;
+    color: var(--text-color);
+    background: rgba(28, 28, 33, 1);
+}
+
+#rankings>div.content.scrollpane.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition.os-host-overflow.os-host-overflow-x.os-host-overflow-y>div.os-padding>div>div {
+    background-color: black;
+}
+
+/*Profile Viewer*/
+
+div.profile_txt.textarea.aliased.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition, textarea.comment_txt {
+    background: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+#profile_content>div.os-padding>div>div>div.textinput.proxy {
+    color: var(--text-color);
+}
+
+/*My Profile*/
+
+textarea.profile_txt {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/*Tournaments*/
+
+div.desc_txt.size18.cyan.selectable {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+span.name_txt.selectable.size24 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/*----------- FONT CHANGES ---------*/
+
+/*FONT Main menu*/
+
+div.menu_btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+span.username_txt.selectable.size24 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+span.not_link, span.link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+div.reply_btn, div.date_txt.arial_rounded18 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+div.status_txt.size18.cyan.selectable {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/*FONT Name and LP*/
+
+span.username_txt.selectable {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+span.life_txt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/*FONT Card option pop up*/
+
+span.card_menu_txt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/*FONT Field section*/
+
+span.gray_txt.arial_rounded25, span.white_txt.arial_rounded25 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+span.end_turn_txt.arial_rounded20 {
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+span.start_turn_txt.arial_rounded20 {
+    padding-left: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+div div b {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #abc5d6;
+}
+
+#field {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+/* FONT Like count*/
+
+div.likes {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/*FONT Profile Viewer*/
+
+div.stats span, span.views_lbl, span.views_txt.bisque, span.unfollow_btn, div.delete_btn.arial_rounded25, div.os-viewport.os-viewport-native-scrollbars-invisible {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+div.os-content.selectable.os-textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+span.profile_lbl.kristenitc, span.comments_lbl.kristenitc, span.post_a_comment_lbl.kristenitc, span.friends_lbl.kristenitc {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/*FONT Browse Users*/
+
+span.username_txt.bisque {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+div.desc_txt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/*FONT Friend Requests*/
+
+div.accept_btn.arial_rounded25 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+div.deny_btn.arial_rounded25 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+div.message_btn.arial_rounded25 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+span.accept_all_btn.arial_rounded25 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+#duel_records span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/*FONT Zone card counter
+(this one was pain in the ass to find)*/
+
+#cid1_txt, #cig1_txt, #cib1_txt, #cie1_txt, cid2_txt, #cig2_txt, #cib2_txt, #cie2_txt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
