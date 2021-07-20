@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Calibri:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Calibri:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap);
 /*Feel free to delete the unnecessary sections or modify them to your needs*/
 
 /*----------- SECTION: CUSTOM AVATAR AND BACKROUND ---------*/
@@ -379,7 +379,7 @@ span.accept_all_btn.arial_rounded25 {
 /*FONT Zone card counter
 (this one was pain in the ass to find)*/
 
-#cid1_txt, #cig1_txt, #cib1_txt, #cie1_txt, cid2_txt, #cig2_txt, #cib2_txt, #cie2_txt {
+#cid1_txt, #cig1_txt, #cib1_txt, #cie1_txt, cid2_txt, #cig2_txt, #cib2_txt, #cie2_txt ,#hm1_txt,#hm2_txt,#hm3_txt,#hm4_txt,hm5_txt,#om1_txt,#om2_txt,#om3_txt,#om4_txt,#om5_txt,#link_right_txt,#hl_txt,#ol_txt{
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
