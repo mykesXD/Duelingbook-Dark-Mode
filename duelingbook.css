@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Calibri:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap);
 /*Feel free to delete the unnecessary sections or modify them to your needs*/
 
+
+
 /*----------- SECTION: CUSTOM AVATAR AND BACKROUND ---------*/
+
+
 
 #circuit_board {
     visibility: hidden;
@@ -18,17 +22,21 @@
 /*Background image (Replace the link with image or gif link)*/
 
 body {
-    background: url('https://mykes.s-ul.eu/EKsPp9cn');
+    background: url(https://mykes.s-ul.eu/EKsPp9cn);
     background-size: cover;
 }
 
 /*In duel avatar (Replace the link with image or gif link)*/
 
 #avatar1>img.image {
-    content: url('https://mykes.s-ul.eu/MPeoeF4j');
+    content: url(https://mykes.s-ul.eu/8fDmfjqf);
 }
 
+
+
 /*----------- SECTION: DARK MODE ---------*/
+
+
 
 /*Colors*/
 
@@ -48,10 +56,74 @@ body {
     --select-color: #4486c4;
 }
 
+:root {
+    --lp-color-p1: linear-gradient(90deg, rgba(230, 80, 120, 1) 0%, rgba(203, 65, 65, 1) 100%);
+}
+
+:root {
+    --lp-color-p2: linear-gradient(90deg, rgba(69, 90, 167, 1) 0%, rgba(45, 80, 196, 1) 100%);
+}
+
 /*Player colors were too bright on dark*/
 
-font {
-    filter: grayscale(20%);
+div.os-content.selectable.os-textarea b font {
+    font-weight: 600;
+    filter: contrast(70%)hue-rotate(348deg);
+}
+
+/*Lifepoint and player colors*/
+
+div#lifepoints1.lifepoints div.life_bar {
+    background: var(--lp-color-p1);
+}
+
+div#lifepoints2.lifepoints div.life_bar {
+    background: var(--lp-color-p2);
+}
+
+div.life_border {
+    border-color: #303030;
+}
+
+div.black_bar {
+    background: linear-gradient(90deg, rgba(4, 4, 4, 1) 0%, rgba(22, 22, 22, 1) 100%);
+    ;
+}
+
+div#avatar1.duel_avatar {
+    background: var(--lp-color-p1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+div#avatar2.duel_avatar {
+    background: var(--lp-color-p2);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+div.gone {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/*Phase buttons*/
+
+div#field_content img {
+    filter: contrast(88%) hue-rotate(345deg);
+}
+
+/*Player current status*/
+
+#status1 .status_txt, #status2 .status_txt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/*Links*/
+
+div a u {
+    color: #476fff;
 }
 
 /*Selection color*/
@@ -139,6 +211,10 @@ div.cout_txt.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize
     font-weight: 400;
 }
 
+div div b {
+    color: #90c982;
+}
+
 /*Card options*/
 
 span.card_menu_txt {
@@ -164,11 +240,15 @@ div.chat_background {
     background: var(--bg-color);
 }
 
+div div font {
+    filter: contrast(70%)hue-rotate(348deg);
+}
+
 div.log_txt.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition {
     background: none;
     color: var(--text-color);
     background: var(--bg-color);
-    border:1px solid var(--border-color);
+    border: 1px solid var(--border-color);
 }
 
 /*Login Screen*/
@@ -177,22 +257,45 @@ div.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled
     background: none;
     color: var(--text-color);
     background: var(--bg-color);
-    border:1px solid var(--border-color);
+    border: 1px solid var(--border-color);
 }
 
 #logged_in div.background {
     color: var(--text-color);
     background: var(--bg-color);
-    border:1px solid var(--border-color);
+    border: 1px solid var(--border-color);
 }
 
 #logged_in_as_lbl {
     color: var(--text-color);
 }
 
-#logged_in > span.username_txt{
+#logged_in>span.username_txt {
     color: var(--text-color);
 }
+
+/*Main Menu*/
+
+div.menu_btn img {
+    filter: saturate(30%) hue-rotate(23deg);
+}
+
+textarea.status_txt {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/*Deck Constuctor*/
+
+img.deck_constructor {
+    filter: hue-rotate(300deg) saturate(50%);
+    opacity: 90%;
+}
+
+#search img {
+    filter: saturate(13%) invert(100%) hue-rotate(325deg) brightness(350%) contrast(85%);
+}
+
 /*Rankings*/
 
 .ranking_item.unselectable {
@@ -203,6 +306,12 @@ div.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled
 
 #rankings>div.content.scrollpane.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition.os-host-overflow.os-host-overflow-x.os-host-overflow-y>div.os-padding>div>div {
     background-color: black;
+}
+
+/*Duel room*/
+
+#formats_inner {
+    filter: contrast(80%) saturate(50%);
 }
 
 /*Profile Viewer*/
@@ -224,25 +333,46 @@ textarea.profile_txt {
     background: var(--bg-color);
 }
 
-/*Tournaments*/
+/*Online Users*/
 
-div.desc_txt.size18.cyan.selectable {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+div.os-content.os-list div.cell.cell1 {
+    color: var(--text-color);
+    background: var(--bg-color);
 }
 
-span.name_txt.selectable.size24 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+div#action_list div.cell.cell1 {
+    color: var(--text-color);
+    background: var(--bg-color);
+    margin: -2px;
+    border: solid 1px var(--border-color);
 }
+
+div.os-content.os-list div.cell.cell1.isAdmin.admin1 {
+    color: lightgreen;
+    background: var(--bg-color);
+}
+
+div.os-content.os-list div.cell.cell1.following {
+    color: lightskyblue;
+    background: var(--bg-color);
+}
+
+
 
 /*----------- FONT CHANGES ---------*/
+
+
 
 /*FONT Main menu*/
 
 div.menu_btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+}
+
+div.delete_btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 span.username_txt.selectable.size24 {
@@ -265,16 +395,29 @@ div.status_txt.size18.cyan.selectable {
     font-weight: 400;
 }
 
+/* FONT Tournaments*/
+
+div.desc_txt.size18.cyan.selectable {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+span.name_txt.selectable.size24 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
 /*FONT Name and LP*/
 
 span.username_txt.selectable {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    filter: drop-shadow(0px 1px 0px black);
+    padding-top: 1.5px;
 }
 
 span.life_txt {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    filter: drop-shadow(0px 1px 0px black);
 }
 
 /*FONT Card option pop up*/
@@ -288,7 +431,7 @@ span.card_menu_txt {
 
 span.gray_txt.arial_rounded25, span.white_txt.arial_rounded25 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 span.end_turn_txt.arial_rounded20 {
@@ -306,13 +449,13 @@ span.start_turn_txt.arial_rounded20 {
 div div b {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: #abc5d6;
 }
 
 #field {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
+
 /* FONT Like count*/
 
 div.likes {
@@ -335,6 +478,21 @@ div.os-content.selectable.os-textarea {
 span.profile_lbl.kristenitc, span.comments_lbl.kristenitc, span.post_a_comment_lbl.kristenitc, span.friends_lbl.kristenitc {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+}
+
+#profile_content>div.os-padding>div>div>div.textinput.proxy {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+#profile_username_txt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+div.comment_txt.arial_rounded18.selectable.cyan {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 /*FONT Browse Users*/
@@ -379,7 +537,26 @@ span.accept_all_btn.arial_rounded25 {
 /*FONT Zone card counter
 (this one was pain in the ass to find)*/
 
-#cid1_txt, #cig1_txt, #cib1_txt, #cie1_txt, cid2_txt, #cig2_txt, #cib2_txt, #cie2_txt ,#hm1_txt,#hm2_txt,#hm3_txt,#hm4_txt,hm5_txt,#om1_txt,#om2_txt,#om3_txt,#om4_txt,#om5_txt,#link_right_txt,#hl_txt,#ol_txt{
+#cid1_txt, #cig1_txt, #cib1_txt, #cie1_txt, cid2_txt, #cig2_txt, #cib2_txt, #cie2_txt, #hm1_txt, #hm2_txt, #hm3_txt, #hm4_txt, hm5_txt, #om1_txt, #om2_txt, #om3_txt, #om4_txt, #om5_txt, #link_right_txt, #hl_txt, #ol_txt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+/*FONT Post Status*/
+
+span.title_lbl.kristenitc, #post_status_btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+/*FONT Pop up message*/
+
+#msg, div.ok_btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+#confirm {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 }
