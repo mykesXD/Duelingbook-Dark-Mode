@@ -3,7 +3,7 @@ Duelingbook UI living in 2010 while we're living in 2021💀
 ![db2](https://user-images.githubusercontent.com/50587061/126388067-33b61677-f8a0-4d52-b5f6-d691576329e5.gif)
 
 
-
+Dark mode + Customizations + Many UI and design improvements
 
 ## Install
 
