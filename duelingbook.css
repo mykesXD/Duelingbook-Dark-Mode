@@ -1,12 +1,22 @@
 @import url(https://fonts.googleapis.com/css2?family=Calibri:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap);
-/*Feel free to delete the unnecessary sections or modify them to your needs*/
 
 
+/*===== CHANGE AVATAR AND BACKGROUND by replacing links below with your image or gif links =====*/
 
-/*----------- SECTION: CUSTOM AVATAR AND BACKROUND ---------*/
+/*Background image*/
 
+body {
+    background: url(https://mykes.s-ul.eu/EKsPp9cn);
+    background-size: cover;
+}
 
+/*In duel avatar*/
 
+#avatar1>img.image {
+    content: url(https://mykes.s-ul.eu/MPeoeF4j);
+}
+
+/*Hide default background*/
 #circuit_board {
     visibility: hidden;
 }
@@ -19,29 +29,16 @@
     visibility: hidden;
 }
 
-/*Background image (Replace the link with image or gif link)*/
-
-body {
-    background: url(https://mykes.s-ul.eu/EKsPp9cn);
-    background-size: cover;
-}
-
-/*In duel avatar (Replace the link with image or gif link)*/
-
-#avatar1>img.image {
-    content: url(https://mykes.s-ul.eu/8fDmfjqf);
-}
-
-
-
-/*----------- SECTION: DARK MODE ---------*/
-
-
-
-/*Colors*/
+/*===== CHANGE FONT by adding @import of your font and replace " Roboto, sans-serif " below =====*/
 
 :root {
-    --bg-color: linear-gradient(0deg, rgba(28, 28, 33, 1) 0%, rgba(23, 23, 27, 1) 100%);
+    --font-family: 'Roboto', sans-serif;
+}
+
+/*===== CHANGE COLOR by replacing the HEX values(#000000) =====*/
+
+:root {
+    --bg-color: linear-gradient(0deg, #1c1c21 0%, #17171b 100%);
 }
 
 :root {
@@ -57,12 +54,19 @@ body {
 }
 
 :root {
-    --lp-color-p1: linear-gradient(90deg, rgba(230, 80, 120, 1) 0%, rgba(203, 65, 65, 1) 100%);
+    --lp-color-p1: linear-gradient(90deg, #ce404f 0%, #cb4141 100%);
 }
 
 :root {
-    --lp-color-p2: linear-gradient(90deg, rgba(69, 90, 167, 1) 0%, rgba(45, 80, 196, 1) 100%);
+    --lp-color-p2: linear-gradient(90deg, #3c49af 0%, #293594 100%);
 }
+
+
+
+/*----------- SECTION: DARK MODE ---------*/
+
+
+
 
 /*Player colors were too bright on dark*/
 
@@ -86,7 +90,7 @@ div.life_border {
 }
 
 div.black_bar {
-    background: linear-gradient(90deg, rgba(4, 4, 4, 1) 0%, rgba(22, 22, 22, 1) 100%);
+    background: linear-gradient(90deg, #040404 0%, #161616 100%);
     ;
 }
 
@@ -116,7 +120,7 @@ div#field_content img {
 /*Player current status*/
 
 #status1 .status_txt, #status2 .status_txt {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
@@ -196,7 +200,7 @@ div.combobox.proxy.unselectable {
 select {
     background: none;
     color: var(--text-color);
-    background: rgba(28, 28, 33, 1);
+    background: #1c1c21;
 }
 
 /*Chatting section*/
@@ -207,7 +211,7 @@ div.cout_txt.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize
     background: var(--bg-color);
     border: solid 1px var(--border-color);
     padding-left: 6px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
 }
 
@@ -220,14 +224,14 @@ div div b {
 span.card_menu_txt {
     background: none;
     opacity: 85%;
-    color: var(--text-color);
-    background: var(--bg-color);
+    color: #eeeeee;
+    background: #1c1c21;
     border: solid 1px var(--border-color);
 }
 
 span.card_menu_txt:hover {
     background: none;
-    color: var(--text-color);
+    color: #1c1c21;
     background-color: var(--select-color);
     border: solid 1px var(--border-color);
 }
@@ -301,7 +305,7 @@ img.deck_constructor {
 .ranking_item.unselectable {
     background: none;
     color: var(--text-color);
-    background: rgba(28, 28, 33, 1);
+    background: #1c1c21;
 }
 
 #rankings>div.content.scrollpane.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition.os-host-overflow.os-host-overflow-x.os-host-overflow-y>div.os-padding>div>div {
@@ -359,63 +363,65 @@ div.os-content.os-list div.cell.cell1.following {
 
 
 
-/*----------- FONT CHANGES ---------*/
+/*----------- SECTION: FONTS ---------*/
 
 
 
 /*FONT Main menu*/
 
 div.menu_btn {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
 }
 
 div.delete_btn {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
 }
 
 span.username_txt.selectable.size24 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 span.not_link, span.link {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
 }
 
 div.reply_btn, div.date_txt.arial_rounded18 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 div.status_txt.size18.cyan.selectable {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
 }
 
 /* FONT Tournaments*/
 
 div.desc_txt.size18.cyan.selectable {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
 }
 
 span.name_txt.selectable.size24 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
 }
 
 /*FONT Name and LP*/
 
 span.username_txt.selectable {
+    font-family: var(--font-family);
+    font-weight: 600;
     filter: drop-shadow(0px 1px 0px black);
     padding-top: 1.5px;
 }
 
 span.life_txt {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
     filter: drop-shadow(0px 1px 0px black);
 }
@@ -423,140 +429,140 @@ span.life_txt {
 /*FONT Card option pop up*/
 
 span.card_menu_txt {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 /*FONT Field section*/
 
 span.gray_txt.arial_rounded25, span.white_txt.arial_rounded25 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
 }
 
 span.end_turn_txt.arial_rounded20 {
     padding-left: 5px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
 }
 
 span.start_turn_txt.arial_rounded20 {
     padding-left: 6px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
 }
 
 div div b {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 #field {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
 }
 
 /* FONT Like count*/
 
 div.likes {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 /*FONT Profile Viewer*/
 
 div.stats span, span.views_lbl, span.views_txt.bisque, span.unfollow_btn, div.delete_btn.arial_rounded25, div.os-viewport.os-viewport-native-scrollbars-invisible {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 div.os-content.selectable.os-textarea {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
 }
 
 span.profile_lbl.kristenitc, span.comments_lbl.kristenitc, span.post_a_comment_lbl.kristenitc, span.friends_lbl.kristenitc {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
 }
 
 #profile_content>div.os-padding>div>div>div.textinput.proxy {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
 }
 
 #profile_username_txt {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
 }
 
 div.comment_txt.arial_rounded18.selectable.cyan {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 /*FONT Browse Users*/
 
 span.username_txt.bisque {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
 }
 
 div.desc_txt {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 /*FONT Friend Requests*/
 
 div.accept_btn.arial_rounded25 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 div.deny_btn.arial_rounded25 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 div.message_btn.arial_rounded25 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 span.accept_all_btn.arial_rounded25 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
 }
 
 #duel_records span {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-family: var(--font-family);
+    font-weight: 600;
 }
 
 /*FONT Zone card counter
 (this one was pain in the ass to find)*/
 
 #cid1_txt, #cig1_txt, #cib1_txt, #cie1_txt, cid2_txt, #cig2_txt, #cib2_txt, #cie2_txt, #hm1_txt, #hm2_txt, #hm3_txt, #hm4_txt, hm5_txt, #om1_txt, #om2_txt, #om3_txt, #om4_txt, #om5_txt, #link_right_txt, #hl_txt, #ol_txt {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
 }
 
 /*FONT Post Status*/
 
 span.title_lbl.kristenitc, #post_status_btn {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
 }
 
 /*FONT Pop up message*/
 
 #msg, div.ok_btn {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
 }
 
 #confirm {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
 }
