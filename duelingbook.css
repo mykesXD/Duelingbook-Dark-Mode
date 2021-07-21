@@ -543,7 +543,7 @@ span.accept_all_btn.arial_rounded25 {
 /*FONT Zone card counter
 (this one was pain in the ass to find)*/
 
-#cid1_txt, #cig1_txt, #cib1_txt, #cie1_txt, cid2_txt, #cig2_txt, #cib2_txt, #cie2_txt, #hm1_txt, #hm2_txt, #hm3_txt, #hm4_txt, hm5_txt, #om1_txt, #om2_txt, #om3_txt, #om4_txt, #om5_txt, #link_right_txt, #hl_txt, #ol_txt {
+#cid1_txt, #cig1_txt, #cib1_txt, #cie1_txt, #cid2_txt, #cig2_txt, #cib2_txt, #cie2_txt, #hm1_txt, #hm2_txt, #hm3_txt, #hm4_txt, #hm5_txt, #om1_txt, #om2_txt, #om3_txt, #om4_txt, #om5_txt, #link_right_txt, #hl_txt, #ol_txt {
     font-family: var(--font-family);
     font-weight: 600;
 }
