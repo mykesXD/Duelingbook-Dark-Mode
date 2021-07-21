@@ -11,7 +11,7 @@ Dark mode + Customizations + Many UI and design improvements
 
 2. Go to <a href="https://duelingbook.com">DuelingBook</a> and open the extension
 
-3. Paste the <a href="https://mykes.s-ul.eu/xCY2yvcZ">code</a> in the "Code" section
+3. Paste the <a href="https://mykes.s-ul.eu/5X6I6hEn">code</a> in the "Code" section
 
 And you're the good to go 
 
