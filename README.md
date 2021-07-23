@@ -11,7 +11,7 @@ Dark mode + Customizations + Many UI and design improvements
 
 2. Go to <a href="https://duelingbook.com">DuelingBook</a> and open the extension
 
-3. Paste the <a href="https://mykes.s-ul.eu/5X6I6hEn">code</a> in the "Code" section
+3. Paste the <a href="https://raw.githubusercontent.com/Mykesss/Duelingbook-Dark-Mode/main/duelingbook.css">code</a> in the "Code" section
 
 And you're the good to go 
 
@@ -21,8 +21,7 @@ And you're the good to go
 After installing the code you can directly edit the css on the extenstion to  
 edit or delete parts such as **Images, Fonts, Colorings** .etc to your likings
 
-
-![image](https://user-images.githubusercontent.com/50587061/126386335-d9634097-05c5-4c7f-826c-db73741b4c06.png)
+<img src="https://user-images.githubusercontent.com/50587061/126386335-d9634097-05c5-4c7f-826c-db73741b4c06.png" width = 30%>
 
 Since I was just making this for myself I didn't plan ahead so it's a bit mess  
 JS would've been more user friendly with more options but guess it would've taken me much longer kek
