@@ -3,20 +3,28 @@
 
 /*===== CHANGE AVATAR AND BACKGROUND by replacing links below with your image or gif links =====*/
 
+
+/*Control dimming of the background image*/
+
+:root{
+    --bg-dim: 50%;
+}
+
 /*Background image*/
 
-body {
-    background: url(https://mykes.s-ul.eu/EKsPp9cn);
+body{
+    background: linear-gradient( rgba(0, 0, 0, var(--bg-dim)),rgba(0, 0, 0, var(--bg-dim))), url(https://wallpaperaccess.com/full/22271.jpg);
     background-size: cover;
 }
 
 /*In duel avatar*/
 
 #avatar1>img.image {
-    content: url(https://mykes.s-ul.eu/MPeoeF4j);
+    content: url(https://mykes.s-ul.eu/aNMvZwxh);
 }
 
 /*Hide default background*/
+
 #circuit_board {
     visibility: hidden;
 }
@@ -257,6 +265,13 @@ div.log_txt.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-
 
 /*Login Screen*/
 
+div#login div.background{
+    background: var(--bg-color);
+}
+div#login{
+    color: var(--text-color);
+}
+
 div.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition.os-host-overflow.os-host-overflow-y {
     background: none;
     color: var(--text-color);
@@ -457,6 +472,13 @@ div div b {
     font-weight: 500;
 }
 
+span.arial_rounded20 {
+    padding-top: 1px;
+    padding-left: 2px;
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
 #field {
     font-family: var(--font-family);
     font-weight: 600;
@@ -565,4 +587,19 @@ span.title_lbl.kristenitc, #post_status_btn {
 #confirm {
     font-family: var(--font-family);
     font-weight: 600;
+}
+
+span.connection_status {
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+#welcome_buttons span{
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+#countdown2{
+    font-family: var(--font-family);
+    font-weight: 500;
 }
