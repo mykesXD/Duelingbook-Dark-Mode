@@ -213,7 +213,7 @@ select {
 
 /*Chatting section*/
 
-div.cout_txt.textarea.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition {
+.cout_txt.textarea.scrollpane.selectable > div[tabindex]{
     background: none;
     color: var(--text-color);
     background: var(--bg-color);
@@ -335,7 +335,7 @@ img.deck_constructor {
 
 /*Profile Viewer*/
 
-div.profile_txt.textarea.aliased.scrollpane.selectable.os-host.os-theme-dark.os-host-resize-disabled.os-host-transition, textarea.comment_txt {
+div.profile_txt.textarea.aliased.scrollpane.selectable{
     background: none;
     color: var(--text-color);
     background: var(--bg-color);
@@ -354,7 +354,7 @@ textarea.profile_txt {
 
 /*Online Users*/
 
-div.os-content.os-list div.cell.cell1 {
+div.cell.cell1{
     color: var(--text-color);
     background: var(--bg-color);
 }
@@ -602,4 +602,8 @@ span.connection_status {
 #countdown2{
     font-family: var(--font-family);
     font-weight: 500;
+}
+
+div div div {
+  
 }
