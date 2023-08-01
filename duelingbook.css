@@ -604,6 +604,20 @@ span.connection_status {
     font-weight: 500;
 }
 
-div div div {
-  
+/*Replace RPS imgs with Geargianos*/
+.content .cardfront .cardfront_content>img.pic[src*="card/rock"] {
+	content: url("https://images.duelingbook.com/card-pics/1759.jpg");
+}
+
+.content .cardfront .cardfront_content>img.pic[src*="card/paper"] {
+	content: url("https://images.duelingbook.com/card-pics/6302.jpg");
+}
+
+.content .cardfront .cardfront_content>img.pic[src*="card/scissors"] {
+	content: url("https://images.duelingbook.com/card-pics/5444.jpg");
+}
+
+/*Change both player sleeves*/
+.content .cardback > img {
+	content: url("https://static.wikia.nocookie.net/yugioh/images/e/e5/Back-EN.png");
 }
